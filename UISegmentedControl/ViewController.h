@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *Label;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
+- (IBAction)SegmentButton:(id)sender;
 
 
 @end

@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    if (self.segmentControl.selectedSegmentIndex == 0) {
+        self.Label.text = @"Segment 1 was selected";
+    }
+    if (self.segmentControl.selectedSegmentIndex == 1) {
+        self.Label.text = @"Segment 2 was selected";
+    }
+    if (self.segmentControl.selectedSegmentIndex == 2) {
+        self.Label.text = @"Segment 3 was selected";
+    }
+    if (self.segmentControl.selectedSegmentIndex == 3) {
+        self.Label.text = @"Segment 4 was selected";
+    }
 }
 
 
@@ -26,4 +38,18 @@
 }
 
 
+- (IBAction)SegmentButton:(id)sender {
+    if (self.segmentControl.selectedSegmentIndex == 0) {
+        self.Label.text = @"Segment 1 was selected";
+    }
+    if (self.segmentControl.selectedSegmentIndex == 1) {
+        self.Label.text = @"Segment 2 was selected";
+    }
+    if (self.segmentControl.selectedSegmentIndex == 2) {
+        self.Label.text = @"Segment 3 was selected";
+    }
+    if (self.segmentControl.selectedSegmentIndex == 3) {
+        self.Label.text = @"Segment 4 was selected";
+    }
+}
 @end
